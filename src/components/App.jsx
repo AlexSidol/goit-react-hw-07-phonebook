@@ -28,7 +28,7 @@ export default function App() {
       <ContactForm />
 
       <h2>Contacts</h2>
-      {isLoading && !error && <p>Sorry, but i have paws</p>}
+
       {contacts.length > 0 ? (
         <div>
           <Filter />
@@ -37,6 +37,7 @@ export default function App() {
       ) : (
         <p>Please, add contact ☝️</p>
       )}
+      {isLoading && !error && <p>Sorry, but i have paws</p>}
     </div>
   );
 }
